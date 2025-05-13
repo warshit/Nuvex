@@ -17,7 +17,7 @@
                 <a href="index.html">Home</a>
                 <a href="#">Updates</a>
                 <a href="#">About</a>
-                <button>Admin</button>
+                <button onclick="window.location.href='admin.html'">Admin</button>
             </div>
         </div>
     </header>
@@ -25,6 +25,8 @@
         <div class="heading">
             <h1>Events</h1>
         </div>
+        <div id="eventsContainer"></div>
+
         <a href="index.html">
 
             <div class="main-card">
@@ -38,7 +40,7 @@
                     <img src="logo5.webp" alt="">
                 </div>
             </div>
-            <!-- </a> -->
+            
         </a>
         <a href="index.html">
 
@@ -97,7 +99,45 @@
             </div>
         </a>
     </main>
+     <footer>
+        <div class="content-footer">
+            <a href="#">Contact</a>
+            <a href="#">Updates</a>
+            <a href="#">Events</a>
+            <a href="#">Gallery</a>
+        </div>
+        <div class="c-r">
+            <p>&copy; 2025 Nuvex. All rights reserved.</p>
+
+        </div>
+    </footer>
+    <script>
+  const container = document.getElementById("eventsContainer");
+  const events = JSON.parse(localStorage.getItem("events")) || [];
+
+  events.forEach(event => {
+    const card = `
+      <a href="index.html">
+        
+        <div class="main-card">
+          <div class="card">
+            <h4>${event.title}</h4>
+            <p>${event.description}</p>
+            <p>${event.date}</p>
+            <p>${event.time}</p>
+          </div>
+          <div class="image">
+            <img src="${event.image || 'logo5.webp'}" alt="Event Image" />
+          </div>
+        </div>
+      </a>
+    `;
+    container.innerHTML += card;
+  });
+</script>
+
 
 </body>
+
 
 </html>

@@ -40,7 +40,7 @@ body{
     gap: 20px;
     text-decoration: none;
     margin-right: 20px;
-    font-weight: 600;
+    font-weight: 400;
     /* font-size: medium; */
     font-family:  'Inter', sans-serif ;
 
@@ -54,6 +54,9 @@ body{
     background-color: black;
     color: white;
     font-family:  'Inter', sans-serif ;
+}
+.nav-contents button:hover{
+    cursor: pointer;
 }
 .middle{
     
@@ -137,8 +140,9 @@ body{
 }
 .content-footer{
     display: flex;
-    justify-content: space-evenly;
-    margin: 4vh;
+    justify-content: center;
+    gap: 5vw;
+    margin: 2.5vh;
 }
 .content-footer a{
     text-decoration: none;
@@ -148,9 +152,15 @@ body{
     justify-content: center;
     display: flex;
     margin-bottom: 3vh;
+    color: var(--text-secondary-color);
+    font-size: 15;
 }
 footer{
     margin-top: 9vh;
     border: 2px solid #C9C9C9;
-    background-color: #C9C9C9;
+    /* background-color: #C9C9C9; */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+
+
 }

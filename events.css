@@ -41,7 +41,7 @@ body{
     gap: 20px;
     text-decoration: none;
     margin-right: 20px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: medium;
     font-family:  'Inter', sans-serif ;
 
@@ -108,5 +108,30 @@ a{
     width: 100%;
     height: 100%;
  
+
+}
+.content-footer{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin: 2.5vh;
+}
+.content-footer a{
+    text-decoration: none;
+    color: var(--text-main-color);
+}
+.c-r{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3vh;
+    color: var(--text-secondary-color);
+    font-size: 15;
+}
+footer{
+    margin-top: 9vh;
+    border: 2px solid #C9C9C9;
+    /* background-color: #C9C9C9; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 
 }
