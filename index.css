@@ -58,8 +58,7 @@ body{
 .nav-contents button:hover{
     cursor: pointer;
 }
-.middle{
-    
+.middle{    
     display: flex;
     justify-content: center;
 }
