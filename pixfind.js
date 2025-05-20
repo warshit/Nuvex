@@ -1,0 +1,84 @@
+(function(){
+    let _0xabc1 = document["\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64"]("\x6e\x75\x6d\x62\x65\x72\x49\x6e\x70\x75\x74");
+    
+    _0xabc1["\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72"]("\x69\x6e\x70\x75\x74", function () {
+        let _0x1234 = this["\x76\x61\x6c\x75\x65"]["\x74\x72\x69\x6d"]()["\x74\x6f\x55\x70\x70\x65\x72\x43\x61\x73\x65"]();
+        let _0x5678 = "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x69\x61\x72\x65\x2d\x64\x61\x74\x61\x2e\x73\x33\x2e\x61\x70\x2d\x73\x6f\x75\x74\x68\x2d\x31\x2e\x61\x6d\x61\x7a\x6f\x6e\x61\x77\x73\x2e\x63\x6f\x6d\x2f\x75\x70\x6c\x6f\x61\x64\x73\x2f\x53\x54\x55\x44\x45\x4e\x54\x53\x2f{number}/\x7b\x6e\x75\x6d\x62\x65\x72\x7d\x2e\x6a\x70\x67";
+
+        let _0x9abc = _0x5678["\x72\x65\x70\x6c\x61\x63\x65"](/\x7b\x6e\x75\x6d\x62\x65\x72\x7d/g, encodeURIComponent(_0x1234));
+        let _0xdef0 = document["\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64"]("\x69\x6d\x61\x67\x65\x43\x6f\x6e\x74\x61\x69\x6e\x65\x72");
+
+        if (_0x1234) {
+            _0xdef0["\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c"] = "\x3c\x70\x3e\x47\x65\x6e\x65\x72\x61\x74\x65\x64\x20\x49\x6d\x61\x67\x65\x3a\x3c\x2f\x70\x3e\x3c\x69\x6d\x67\x20\x73\x72\x63\x3d\"" + _0x9abc + "\" \x61\x6c\x74\x3d\"\x20\x49\x6d\x61\x67\x65\x20\x6e\x6f\x74\x20\x66\x6f\x75\x6e\x64\x20\x2e\x5f\x2e\"\x3e";
+        } else {
+            _0xdef0["\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c"] = "";
+        }
+    });
+
+    //  Anti-Tamper & Disable DevTools
+    document["\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72"]("\x63\x6f\x6e\x74\x65\x78\x74\x6d\x65\x6e\x75", (e) => e["\x70\x72\x65\x76\x65\x6e\x74\x44\x65\x66\x61\x75\x6c\x74"]());
+    document["\x61\x64\x64\x45\x76\x65\x6e\x74\x4c\x69\x73\x74\x65\x6e\x65\x72"]("\x6b\x65\x79\x64\x6f\x77\x6e", (e) => {
+        if (e["\x63\x74\x72\x6c\x4b\x65\x79"] && (e["\x6b\x65\x79"]["\x74\x6f\x4c\x6f\x77\x65\x72\x43\x61\x73\x65"]() === "\x75" || e["\x6b\x65\x79"]["\x74\x6f\x4c\x6f\x77\x65\x72\x43\x61\x73\x65"]() === "\x73")) e["\x70\x72\x65\x76\x65\x6e\x74\x44\x65\x66\x61\x75\x6c\x74"]();
+        if (e["\x6b\x65\x79"] === "\x46\x31\x32" || (e["\x63\x74\x72\x6c\x4b\x65\x79"] && e["\x73\x68\x69\x66\x74\x4b\x65\x79"] && e["\x6b\x65\x79"] === "\x49")) e["\x70\x72\x65\x76\x65\x6e\x74\x44\x65\x66\x61\x75\x6c\x74"]();
+    });
+
+    // 🚫 Prevent Debugging
+    setInterval(function () {
+        (function () {
+            return false;
+        })["constructor"]("debugger")();
+    }, 500);
+
+    console["\x6c\x6f\x67"]("%cSTOP!", "color: red; font-size: 50px;");
+    console["\x6c\x6f\x67"]("%cThis area is for developers. If someone told you to paste something here, it's a scam!", "color: yellow; font-size: 18px;");
+})();
+(function() {
+    function redirectUser() {
+        window.location.href = "https://www.google.com"; // Change this to your preferred redirect URL
+    }
+
+    function detectDevTools() {
+        //  Debugger Breakpoint
+        setInterval(() => {
+            const before = new Date().getTime();
+            debugger;
+            const after = new Date().getTime();
+            if (after - before > 100) {
+                redirectUser();
+            }
+        }, 100);
+
+        // Console Detection
+        setInterval(() => {
+            if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+                redirectUser();
+            }
+        }, 100);
+
+        // Profile Method
+        console.profile();
+        console.profileEnd();
+        if (console.clear) console.clear();
+        if (window.console && window.console.firebug) {
+            redirectUser();
+        }
+    }
+
+    detectDevTools();
+
+    // Prevent Right-Click
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+    //  Block Debugging Key Shortcuts
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "F12" || 
+            (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) || 
+            (event.ctrlKey && event.key === "U")) {
+            event.preventDefault();
+            redirectUser();
+        }
+    });
+
+    
+})();
+

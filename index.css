@@ -62,7 +62,33 @@ body{
     display: flex;
     justify-content: center;
 }
-
+.content>li{
+    display: inline-block;
+    position: relative;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    z-index: 1;
+    border:2px solid #C9C9C9;
+}
+.content li:hover .dropdown{
+    display: block;
+}
+.dropdown a{
+    display: block;
+    padding: 10px;
+    color: black;
+}
+.dropdown a:hover{
+    width: 100px;
+    background-color:#C9C9C9;
+}
+.dropdown li{
+    width: 120px;
+}
 
 .main-box{
     height: 40vh;
@@ -136,6 +162,41 @@ body{
     width: 30px;
     border-radius: 50%;
     background-color: black;
+}
+@media(max-width: 400px){   
+.nav-contents a{
+    color: var(--text-color);
+    gap: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: medium;
+    font-family:  'Inter', sans-serif ;
+    
+}
+}
+@media(max-width: 360px){   
+.nav-contents a{
+    color: var(--text-color);
+    gap: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: small;
+    font-family:  'Inter', sans-serif ;
+    
+}
+.nav-contents button{
+    margin-right: 2vw;
+    height: 20px;
+    border-radius: 8px;
+    width: 40;
+    border: 0;
+    font-size:10px;
+    background-color: black;
+    color: white;
+    font-family:  'Inter', sans-serif ;
+}
 }
 .content-footer{
     display: flex;
