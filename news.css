@@ -59,6 +59,34 @@ body{
 .nav-contents button:hover{
     cursor: pointer;
 }
+.content>li{
+    display: inline-block;
+    position: relative;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    z-index: 1;
+    border:2px solid #C9C9C9;
+}
+.content li:hover .dropdown{
+    display: block;
+}
+.dropdown a{
+    display: block;
+    padding: 10px;
+    color: black;
+}
+.dropdown a:hover{
+    width: 65px;
+    background-color:#C9C9C9;
+}
+.dropdown li{
+    width: 85px;
+}
+
 .heading{
     margin-left: 7vw;
     margin-top: 5vh;
