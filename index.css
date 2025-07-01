@@ -83,11 +83,11 @@ body{
     color: black;
 }
 .dropdown a:hover{
-    width: 100px;
+    width: 65px;
     background-color:#C9C9C9;
 }
 .dropdown li{
-    width: 120px;
+    width: 85px;
 }
 
 .main-box{
