@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 100px;
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
   background-color: black;
